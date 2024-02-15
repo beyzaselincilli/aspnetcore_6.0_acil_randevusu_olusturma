@@ -1,0 +1,47 @@
+﻿@model IEnumerable<HastaneTakipSistemi.Models.HastaYapilanIslemler>
+
+@{
+    ViewData["Title"] = "Goruntule";
+}
+
+<h1>Goruntule</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.giris)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cikis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tedaviAciklamasi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.barkodOlustur)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.giris)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cikis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tedaviAciklamasi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.barkodOlustur.Id)
+            </td>
+            
+        </tr>
+}
+    </tbody>
+</table>

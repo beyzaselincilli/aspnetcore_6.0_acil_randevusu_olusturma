@@ -1,0 +1,70 @@
+﻿<!--BarkodOlusturs --->
+
+@{
+    Layout = null;
+}
+<html>
+<head>
+    
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">----></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <!-- BarkodOlusturs -->
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="BarkodOlusturs" asp-action="Index">BarkodOlusturs Index</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="BarkodOlusturs" asp-action="Create">Create</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="BarkodOlusturs" asp-action="Delete">Delete</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="BarkodOlusturs" asp-action="Edit">Edit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="BarkodOlusturs" asp-action="Details">Details</a>
+                    </li>
+
+                    <!-- HastaYapilanIslemlers -->
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="HastaYapilanIslemlers" asp-action="Index">HastaYapilanIslemlers Index</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="HastaYapilanIslemlers" asp-action="Create">Create</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="HastaYapilanIslemlers" asp-action="Delete">Delete</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="HastaYapilanIslemlers" asp-action="Edit">Edit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="HastaYapilanIslemlers" asp-action="Details">Details</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <div class="container mt-4">
+        <h1>Doktor Paneline Hoşgeldiniz. Yukardaki Kategorilere tıklayarak ilgili işlemleri yapabilirsiniz.</h1>
+       
+    </div>
+
+   
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2023 AcilOtomasyon All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

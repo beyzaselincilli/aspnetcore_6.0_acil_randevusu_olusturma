@@ -1,0 +1,74 @@
+﻿@model IEnumerable<HastaneTakipSistemi.Models.BarkodOlustur>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">@_localization.dildegis("create")</a>
+</p>
+<div class="table-responsive">
+    <table class="table table-responsive table-borderless">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model=> model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HastaAdi)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.tcNo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EngelDurumu)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Yas)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BarkodNumarasi)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Kod)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem=> item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HastaAdi)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.tcNo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EngelDurumu)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Yas)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BarkodNumarasi)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Kod)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

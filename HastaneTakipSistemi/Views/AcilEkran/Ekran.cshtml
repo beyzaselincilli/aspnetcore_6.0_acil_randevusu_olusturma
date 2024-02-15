@@ -1,0 +1,82 @@
+﻿@model IEnumerable<HastaneTakipSistemi.Models.BarkodOlustur>
+
+@{
+    ViewData["Title"] = "Ekran";
+}
+
+<h1>ACİL TELEVİZYONU</h1>
+
+<div class="table-responsive">
+    <table class="table table-responsive table-borderless">
+        <thead>
+            <tr>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.HastaAdi)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.tcNo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EngelDurumu)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Yas)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BarkodNumarasi)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Kod)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr class="@GetBackgroundColorClass(item.Kod)">
+
+                    <td style="color:black">
+                        @Html.DisplayFor(modelItem => item.HastaAdi)
+                    </td>
+                    <td style="color:darkgrey">
+                        @Html.DisplayFor(modelItem => item.tcNo)
+                    </td>
+                    <td style="color:darkgrey">
+                        @Html.DisplayFor(modelItem => item.EngelDurumu)
+                    </td>
+                    <td style="color:darkgrey">
+                        @Html.DisplayFor(modelItem => item.Yas)
+                    </td>
+                    <td style="color:darkgrey">
+                        @Html.DisplayFor(modelItem => item.BarkodNumarasi)
+                    </td>
+                    <td style="color:darkgrey">
+                        @Html.DisplayFor(modelItem => item.Kod)
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@functions {
+    string GetBackgroundColorClass(string kod)
+    {
+        if (kod == "Yeşil")
+        {
+            return "yesil-bg";
+        }
+        else if (kod == "Kırmızı")
+        {
+            return "kirmizi-bg";
+        }
+        else
+        {
+            return "sari-bg";
+        }
+    }
+}

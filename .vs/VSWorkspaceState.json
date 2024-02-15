@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\HastaneTakip.WebAPI",
+    "\\HastaneTakip.WebAPI\\Models",
+    "\\HastaneTakipSistemi",
+    "\\HastaneTakipSistemi\\Views",
+    "\\HastaneTakipSistemi\\Views\\Home"
+  ],
+  "SelectedNode": "\\HastaneTakip.WebAPI\\Models\\ApplicationDbContext.cs",
+  "PreviewInSolutionExplorer": false
+}

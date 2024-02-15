@@ -1,0 +1,42 @@
+﻿@model HastaneTakipSistemi.Models.HastaYapilanIslemler
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>HastaYapilanIslemler</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.giris)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.giris)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.cikis)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.cikis)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.tedaviAciklamasi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.tedaviAciklamasi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.barkodOlustur)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.barkodOlustur.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "981TNkhnmnEana4Y2t7NUkzFdzTDwl5dQmWuOzxJIdk=",
+  "Source": "HastaneTakip.WebAPI",
+  "BasePath": "_content/HastaneTakip.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
